@@ -1,3 +1,5 @@
+#this script is a choice script that open a news webpage for the subject selected by the user. I created this to automatize articles research for a school project
+
 import webbrowser, feedparser, os
 
 
