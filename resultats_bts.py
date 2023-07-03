@@ -1,4 +1,5 @@
 import requests
+import time
 
 # requete l'etudiant en get: https://www.letudiant.fr/resultat/recherche.html?researcher%5Bnom%5D={nom}&researcher%5Bexamen%5D={diplome}&researcher%5Bacademie%5D={academie}
 # requete l'internaute: https://resultat-bts.linternaute.com/academie-versailles#search=''ezez
@@ -10,10 +11,14 @@ academie = str(input("academie ? "))
 diplome = "bts" #remplacer par input
 
 def main():
-    
-    print(letudiant())
-    #print(internaute())
-    print(leparisien())
+    i = 0
+    while True:
+        print(f'\n[+] Essai {i} :')
+        print(letudiant())
+        #print(internaute())
+        print(leparisien())
+        i += 1 
+        time.sleep(15)
 
     
 def letudiant(): # recherche vers le site letudiant
