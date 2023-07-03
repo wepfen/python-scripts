@@ -1,16 +1,12 @@
 import requests
 
 # requete l'etudiant en get: https://www.letudiant.fr/resultat/recherche.html?researcher%5Bnom%5D={nom}&researcher%5Bexamen%5D={diplome}&researcher%5Bacademie%5D={academie}
-
-
 # requete l'internaute: https://resultat-bts.linternaute.com/academie-versailles#search=''ezez
 # requete parisien: https://www.leparisien.fr/etudiant/examens/resultats/bts/paris-creteil-versailles/candidat/nom/prenom/
-#nom = str(input("nom ?"))
-#prenom = str(input("prenom ?"))
-#academie = str(input("academie ?"))
-nom = "Bagne"  #remplacer par input
-prenom = "Tyron" 
-academie = "versailles" #remplacer par input
+
+nom = str(input("nom ? "))
+prenom = str(input("prenom ? "))
+academie = str(input("academie ? ")) 
 diplome = "bts" #remplacer par input
 
 def main():
